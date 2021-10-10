@@ -1,6 +1,10 @@
-启动项目命令：npm start
+# 启动项目命令：
 
-React 后台管理中心目前Bugs：
+npm install
+
+npm start
+
+# React 后台管理中心目前Bugs：
 
 1.刷新页面，左边路由总是自动跳转到总览menu
 
