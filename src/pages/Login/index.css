@@ -1,0 +1,25 @@
+.title {
+  text-align: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.title img {
+  width: 70px;
+  height: 70px;
+}
+
+.inputAdmin {
+  margin-top: 50px;
+}
+
+.inputAdmin .input {
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.button {
+  width: 250px;
+  margin-top: 10px;
+}
+

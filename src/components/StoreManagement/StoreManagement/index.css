@@ -1,0 +1,7 @@
+.search {
+  width: 200px;
+}
+
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child {
+  left: 5px;
+}
