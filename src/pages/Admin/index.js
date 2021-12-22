@@ -61,7 +61,7 @@ export default class Admin extends Component {
             </Sider>
             <Layout className="site-layout">
               <Header className="site-layout-background" style={{ padding: 0, background: '#001627' }}>
-                <a className="exit">退出</a>
+                <div className="exit">退出</div>
               </Header>
               <Content
                 className="site-layout-background"
