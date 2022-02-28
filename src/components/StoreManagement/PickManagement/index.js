@@ -1,50 +1,50 @@
 import React, {Component} from 'react';
 import {DownOutlined} from '@ant-design/icons';
-import {Row, Col, Tree, Card} from 'antd';
+import {Row, Col, Tree} from 'antd';
 
 const treeData = [
     {
-        title: 'parent 1',
+        title: '广东',
         key: '0-0',
         children: [
             {
-                title: 'parent 1-0',
+                title: '广州',
                 key: '0-0-0',
                 children: [
                     {
-                        title: 'leaf',
+                        title: '白云区',
                         key: '0-0-0-0',
                     },
                     {
-                        title: 'leaf',
+                        title: '越秀区',
                         key: '0-0-0-1',
                     },
                     {
-                        title: 'leaf',
+                        title: '荔湾区',
                         key: '0-0-0-2',
                     },
                 ],
             },
             {
-                title: 'parent 1-1',
+                title: '深圳',
                 key: '0-0-1',
                 children: [
                     {
-                        title: 'leaf',
+                        title: '南山区',
                         key: '0-0-1-0',
                     },
                 ],
             },
             {
-                title: 'parent 1-2',
+                title: '东莞市',
                 key: '0-0-2',
                 children: [
                     {
-                        title: 'leaf',
+                        title: '南城区',
                         key: '0-0-2-0',
                     },
                     {
-                        title: 'leaf',
+                        title: '东城区',
                         key: '0-0-2-1',
                     },
                 ],
@@ -68,15 +68,13 @@ class PickManagement extends Component {
                 <Row>
                     <Col span={5}>
                         <Tree
-                            showLine
                             switcherIcon={<DownOutlined/>}
-                            defaultExpandedKeys={['0-0-0']}
                             onSelect={this.onSelect}
                             treeData={treeData}
+                            defaultExpandAll
                         />
                     </Col>
                     <Col span={19}>
-                        <Card loading={true}></Card>
                     </Col>
                 </Row>
             </div>

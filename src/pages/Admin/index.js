@@ -6,7 +6,7 @@ import OrderManagement from '../../components/OrderManagement'
 import StoreManagement from '../../components/StoreManagement/StoreManagement'
 import PickManagement from '../../components/StoreManagement/PickManagement'
 import './index.css'
-import { Layout, Menu } from 'antd';
+import { Layout, Menu,message } from 'antd';
 import {
   ShopOutlined,
   TableOutlined,
@@ -30,6 +30,10 @@ export default class Admin extends Component {
     this.setState({
       current: e.key,
     });
+  }
+
+  handleExit = () =>{
+    message.error('暂未开发完成')
   }
 
   render() {
@@ -61,7 +65,7 @@ export default class Admin extends Component {
             </Sider>
             <Layout className="site-layout">
               <Header className="site-layout-background" style={{ padding: 0, background: '#001627' }}>
-                <div className="exit">退出</div>
+                <div className="exit" onClick={this.handleExit}>退出</div>
               </Header>
               <Content
                 className="site-layout-background"

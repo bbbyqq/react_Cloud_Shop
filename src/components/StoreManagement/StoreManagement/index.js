@@ -46,7 +46,7 @@ const columns = [
 ];
 
 const data = [];
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 7; i++) {
   data.push({
     key: i,
     id: `${i}`,
